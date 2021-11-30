@@ -14,10 +14,17 @@ body {
 }
 
 header{
+    background: url(./img/fondos/Cohete.jpg);
     background-color: #364552;
     color: white;
     margin:  0 1rem;
     padding: 1rem 1rem;
+}
+header img {
+    width: auto;
+    height: auto;
+    margin:  0;
+    padding: 0;
 }
 
 header h1 {
