@@ -29,8 +29,10 @@ header h1 {
 }
 
 section article{
-    /* transition indicamos que propiedades de css sean animadas
-    indicando un origen y despues mediante un evento indicar el final 
+    /*
+    transition indicamos que propiedades de css sean animadas
+    indicando un origen y despues mediante un evento indicar 
+    el final 
     el inicio seria un box-shadow sin sombra,
     y el final seria la sombra que le asignamos cuando pasamos el mouse por
     encima
@@ -72,7 +74,7 @@ section article:hover{
         y color  
         en este caso es 0.3 a 30% de sombra*/
     
-    box-shadow: 0 0.1rem 0.4rem rgb(0,0,0, 0.3);
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0, 0.3);
 
     
 }

@@ -1,11 +1,23 @@
+/**************************
+GENERAL
+***************************/
 html{
     /* google fonts montserrat */
    font-family: 'Montserrat', sans-serif;
 
 }
-
-
+* {
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+  }
+img {
+    width: 100%;
+}
 body {
+  font-family: 'Open Sans', sans-serif;
+    
     background: url(../img/fondos/consola.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,12 +25,18 @@ body {
     height: 100vh;
 }
 
+
+/**************************
+HEADING
+***************************/
 header{
     background: url(./img/fondos/Cohete.jpg);
-    background-color: #364552;
+    background-color: #1f2124;
     color: white;
     margin:  0 1rem;
     padding: 1rem 1rem;
+    /* float: left; */
+    /* width: 100%; */
 }
 header img {
     width: auto;
@@ -32,17 +50,124 @@ header h1 {
     text-align: center;
 }
 
-img {
-    width: 100%;
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* 
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Days One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+    font-size: 0.75em;
+    margin: -5px 0 0;
+    font-weight: normal;
+  } 
+  h3 {
+  margin: 0 0 1em 0;
+}
+  */
+
+/**************************
+NAVIGATION
+***************************/
+.barra{
+    color: #3d48e6;
+     font-size: 25px;
+
+}
+nav{
+    text-align-last: center;
+
 }
 
 
-/* PIE */
+/**************************
+section article
+***************************/
+section article  {
+
+    transition: all 0.9s ease, box-shadow 0.3s ease; 
+
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+    margin: 1rem;
+}
+section article h2, section article p{
+        margin: 1rem;
+}
+section article:hover{
+    /* box-shadow: 0 0.1rem 0.4rem rgb(0,0,0, 0.3); */
+    box-shadow: -0.2rem 0.1rem 0.4rem #e90e0e ;
+}
+
+
+
+
+/**************************
+Tabla de practica
+***************************/
+table {
+    width: 90%;
+    /* eliminando espacio entre celdas */
+    border-collapse: collapse;
+    display: none;
+}
+
+th,td{
+    border: solid 1px #eee;
+    padding: 5px;
+
+}
+th{
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+/* seleccionar elementos sean pares o impares 
+dependiendo si esta en un listado o una tabla, dando colores a cada celda par o impar  
+odd = par 
+even = impar*/
+tr:nth-child(even){
+    background-color: #eee;
+
+}
+
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+/* #wrapper {
+    max-width: 940px;
+    margin: 0 auto; 
+    padding: 0 5%;
+  } */
+
+
+
+
+/**************************
+footer
+***************************/
 footer{
     background-color: #222;
     padding: 3rem;
     margin: 1rem ;
     color: #fff;
+    
 }
 footer section {
     float: right;
@@ -61,3 +186,5 @@ footer a{
 footer a:hover{
     color: cornflowerblue;
 }
+
+

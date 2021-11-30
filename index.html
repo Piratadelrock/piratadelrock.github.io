@@ -10,15 +10,22 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
+
+  <!--css principal, personal-->
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--fuentes web-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Mukta|Days+One" rel="stylesheet">
+
 </head>
 
 <body>
-  
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -35,84 +42,113 @@
   <header>
     <!-- <img src="./img/fondos/Cohete.jpg" alt="Emmanuel lopera" title="cohete"> -->
     <h1 class="text-center mt-5 display-4 text-Warning">Hello, world! <br> By Piratadelrock</h1>
-      <!-- <a href="https://piratadelrock.github.io/portaforlio/" style="text-decoration: none;">PORTAFOLIO EN CONSTRUCCIÓN</a> -->
+    <!-- <a href="https://piratadelrock.github.io/portaforlio/" style="text-decoration: none;">PORTAFOLIO EN CONSTRUCCIÓN</a> -->
   </header>
-  <section>
+  <section id="nav">
     <nav>
       <ul>
-        <a href="https://piratadelrock.github.io/practicahtmlcssjs/">Practica Html</a>
+        <!-- <a href="https://piratadelrock.github.io/practicahtmlcssjs/">Practica Html</a> -->
+        <a href="https://github.com/Piratadelrock">Repositorio</a><span class="barra">|</span>
+        <a href="https://pages.github.com/">Documentacion GitHub</a><span class="barra">|</span>
+        <a href="">PORTAFOLIO</a><span class="barra">|</span>
+        <a href="https://windows96.net/">Windows96</a>
       </ul>
-      <ul>
-        <a href="https://github.com/Piratadelrock">Repositorio</a>
-      </ul>
-      <ul>
-        <a href="https://pages.github.com/">Documentacion GitHub</a>
-      </ul>
-      <ul>
-        <a href="https://windows96.net/">windows96</a>
-      </ul>
-      
     </nav>
   </section>
   <!--section: secciones de aplicacion que se
      puede colocar cualquier etiqueta dentro de seccion -->
   <section class="container">
     <!-- article define los post del blog -->
-        <article class="post">
-            <h2>Titulo del post</h2>
-            <code>
-                void f() throw (float) {
-                  throw 10.0f;
-                  }
-                  int main() {
-                  
-                  try {
-                      std::cout << 'A';
-                  f();
-                      std::cout << 'B';
-                  } catch(...) {
-                      std::cout << 'C';
-                  }
-                      return 0;
-                  }
-                  
-                  int X=0 ;
-                  int Y = 0;
-                  int i = 1;
-                  
-                  while(i<=20){
-                      X= X + 5;
-                      i = i + 2;
-                  }
-                  console.log(x);
-            </code>
-            <p>descripcion del post</p>
-            <p>texto del articulo que hay aca y es texto de prueba</p>
-        </article>
-        <article class="post">
-            <h2>Titulo del post 2 </h2>
-            <p>descripcion del post 2</p>
-            <p>texto del articulo 2 que hay aca y es texto de prueba</p>
-        </article>
-        <article class="post">
-            <h2>Titulo del post 3 </h2>
-            <p>descripcion del post 3</p>
-            <p>texto del articulo 3 que hay aca y es texto de prueba</p>
-        </article>
-    </section>
+    <article class="post">
+      <h2>Repositorio <a href="https://github.com/Piratadelrock">GitHub</a></h2>
+
+      <p>mi zona de practicas estara en <a href="https://github.com/Piratadelrock">GitHub</a></p>
+    </article>
+    <article class="post">
+      <h2>Titulo del post 2 </h2>
+      <p>descripcion del post 2</p>
+      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia necessitatibus ducimus asperiores optio,
+        voluptatum ad, in inventore, dolore deleniti deserunt eos nihil molestias hic quas odio quae tempore! Mollitia,
+        quis nemo! Velit dicta aliquid aut a unde, ea quisquam natus eligendi rem. texto del articulo 2 que hay aca y es
+        texto de prueba</p>
+    </article>
+    <article class="post">
+      <h2>Titulo del post 3 </h2>
+      <p>descripcion del post 3</p>
+      <p>texto del articulo 3 que hay aca y es texto de prueba</p>
+    </article>
+  </section>
+
+  <section id="wrapper">
+    <table class="tabla">
+      <tr>
+        <th class="superior"><strong>MODELO</strong></th>
+        <td class="superior"><strong>PROCESADOR</strong></td>
+        <td class="superior"><strong>RAM</strong></td>
+        <td class="superior"><strong>HDD/SSD</strong></td>
+        <td class="superior"><strong>GPU</strong></td>
+        <td class="superior"><strong>PANTALLA</strong></td>
+        <td class="superior"><strong>PRECIO</strong></td>
+        <td class="superior"><strong>SIN IVA</strong></td>
+      </tr>
+      <tr>
+        <th>
+          <strong> ACER NITRO 5 </strong>
+        <td>RYZEN 5 4600H </td>
+        <td>8GB DDR4</td>
+        <td>1 TB HDD</td>
+        <td>Nvidia GTX 1650</td>
+        <td>15.6 FHD 1080 60HZ</td>
+        <td>3.242.310</td>
+        <td>-635.039=2.607.271 </td>
+        </th>
+
+      </tr>
+      <tr>
+        <th> ASUS TUF GAMING </th>
+        <td>Procesador Intel® Core™ i5-10300H; 2,5 GHz (caché de 8M; hasta 4,5 GHz, 4 núcleos)</td>
+        <td>
+          8GB DDR4 SO-DIMM(2933MHz for i5-10300H/i7-10750H/i7-10870H), 32GB</td>
+        <td>SSD de 512 GB M.2 NVMe™ PCIe® 3.0</td>
+        <td>
+          NVIDIA® GeForce® GTX 1650 Ti, GDDR6 de 4 GB
+          NVIDIA® GeForce® GTX 1650, GDDR6 de 4 GB</td>
+        <td>
+          15,6 pulgadas, FHD (1920 × 1080) 16:9, anti-glare display, 62.5%, 47.1%, 144 Hz, Valor de nivel IPS, Optimus
+        </td>
+        <td>3.390.000</td>
+        <td>-644.100=2.745.900 </td>
+      </tr>
+      <tr>
+        <th> ASUS TUF GAMING </th>
+        <td>Procesador Intel® Core™ i7-10870H; 2,2 GHz (caché de 16M; hasta 5,0 GHz, 8 núcleos)</td>
+        <td>
+          8GB DDR4 SO-DIMM(2933MHz for i5-10300H/i7-10750H/i7-10870H), 32GB</td>
+        <td>SSD de 512 GB M.2 NVMe™ PCIe® 3.0</td>
+        <td>
+          NVIDIA® GeForce® GTX 1650 Ti, GDDR6 de 4 GB
+          NVIDIA® GeForce® GTX 1650, GDDR6 de 4 GB</td>
+        <td>
+          15,6 pulgadas, FHD (1920 × 1080) 16:9, anti-glare display, 62.5%, 47.1%, 144 Hz, Valor de nivel IPS, Optimus
+        </td>
+        <td>3500000</td>
+        <td>-665000=2.835.000</td>
+      </tr>
+    </table>
+  </section>
+
 
   <!-- <article>
     <section>
       <h2>Contenido</h2>
       <p>
-       
+
       </p>
     </section>
-  </article> -->
+  </article>
 
-
-  <!-- <aside>
-    <h2>Contenido Extra</h2>
+  <aside>
+    <h2>Contenido aside</h2>
     <p>
       <a href="#insta">Instagram</a> principal es donde publico mis fotos que creo que pueden representar algun momento
       en la vida.
@@ -121,13 +157,15 @@
       tempora pariatur ea ratione ab vel sit! Nesciunt, accusamus natus.
     </p>
   </aside> -->
+
   <footer>
     <section>
-      <p> Sigueme en:  <a id="insta" href="https://instagram.com/piratadelrock" style="text-decoration: none;">Instagram</a></p>
-       <a href="mailto:ejrocko@hotmail.com">ejrocko@hotmail.com</a>
+      <p> Sigueme en: <a id="insta" href="https://www.instagram.com/piratadelrock/"
+          style="text-decoration: none;">Instagram</a></p>
+      <a href="mailto:ejrocko@hotmail.com">ejrocko@hotmail.com</a>
     </section>
-     <h5>Copyright 2021  &copy; </h5>
- </footer>
+    <h5>Copyright 2021 &copy; </h5>
+  </footer>
 </body>
 
 </html>
