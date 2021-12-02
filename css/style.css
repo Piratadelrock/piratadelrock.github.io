@@ -8,6 +8,8 @@ html{
 }
 * {
     font-size: 15px;
+    padding: 0;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -16,7 +18,6 @@ img {
     width: 100%;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
     
     background: url(../img/fondos/consola.png);
     background-size: cover;
@@ -29,17 +30,36 @@ body {
 /**************************
 HEADING
 ***************************/
+/* tarea: piratadelrock volverlo aleatorio el color */
+#pdr{
+    font-size: 4rem;
+    transition: color 2s; 
+    -webkit-transition: color 1.5s;
+    transition: box-shadow 0.5s ease ; 
+
+
+}
+#pdr:hover {
+    box-shadow: 0 1rem 5rem 50rem #222;
+    border-radius: 45px;
+    color: #b90c0c;
+    text-decoration: none;
+    line-height: inherit;
+    
+    /*Tarea: intentando dar propiedad de color aleatorio variables */
+    /* --main-bg-color: #2798ba; */
+    /* background-color: var(--main-bg-color); */
+}
+
 header{
     /* background: url(./img/fondos/Cohete.jpg); */
-  
+    font-family: 'Days One','Open Sans', sans-serif;
     background-color: #1f2124;
     color: white;
     margin:  0 1rem;
     padding: 1rem 1rem;
     border-radius: 0.3rem;
-  
-    /* float: left; */
-    /* width: 100%; */
+    
 }
 
 header img {
@@ -58,77 +78,87 @@ header h1 a {
     text-decoration:none;
     color: white;
 }
-/* tarea: piratadelrock volverlo aleatorio el color */
-#pdr{
-    font-size: 4rem;
-    transition: color 2s; 
-    -webkit-transition: color 1.5s;
-}
-#pdr:hover {
-    color: #b90c0c;
-    text-decoration: none;
-    line-height: inherit;
-    /* --main-bg-color: #2798ba; */
-    background-color: var(--main-bg-color);
-}
 
-.container{
-    max-width: 600px;
-    margin: 0 auto;
-}
-/* 
-#logo {
-  text-align: center;
-  margin: 0;
-}
+.line{
+    /* text-align: center; */
+    background-color: #efefef;
+    text-align-last: center;
+    border-radius: 0.5rem;
+    margin:  0 1rem;
+    padding: 0.25rem 0;
 
-h1 {
-  font-family: 'Days One', sans-serif;
-  margin: 15px 0;
-  font-size: 1.75em;
-  font-weight: normal;
-  line-height: 0.8em;
 }
-
-h2 {
-    font-size: 0.75em;
-    margin: -5px 0 0;
-    font-weight: normal;
-  } 
-  h3 {
-  margin: 0 0 1em 0;
-}
-  */
 
 /**************************
 NAVIGATION
 ***************************/
 /* tarea: cuando baje el scroll que cambie de centro a la izquierda o derecha  */
-#nav {
-    position: sticky;
-    top: 0px;
-   
+nav{
+    /* text-align: center; */
+    background-color: #efefef;
+    text-align-last: center;
+    border-radius: 0.5rem;
+    margin:  0 1rem;
+    padding: 0.25rem 0;
+    
+}
 
+nav a{
+    color: none;
+}
+nav a:hover{
+    color: black;
 }
 
 .barra{
     color: #1281db;
     font-size: 25px;
+}
+
+/*tarea arreglar menu fijo  */
+
+#navSection {
+
+    /* width: 1122px; */
+    /* height:30px; */
+    /* margin: 48px; */
+    /* padding:5px 48px; */
+    /* display:none; */
+    /* background-color: red; */
+}
+/* es el ul del nav */
+.menu-fijo{
+    /* background-color: royalblue; */
+    /* position:fixed; */
+    top:0;   
+    /* width: 260px; */
+    /* float: right; */
+    /* text-align: right; */
+    padding:4px 0 5px 0;
+    list-style-type:none;
+}
+
+.menu-fijo li{ display:inline; }
+.menu-fijo a{
+    transition: background-color 1s ease, box-shadow 0.3s ease;
+
+    font-size:0.9em;
+    /* text-shadow:1px 1px #5E8BC5; */
+    padding:  0.5rem 0.5rem;
+    /* margin: 3rem; */
+    background-color:#efefef;
+    border-radius: 4px;
+}
+.menu-fijo a:hover{
+    background-color:#ffbb00;
+    box-shadow: 0.8rem 1rem 0.5rem #222;
 
 }
 
-nav{
-    /* text-align: center; */
-    text-align-last: center;
-    background-color: #efefef;
-    border-radius: 0.5rem;
-    margin:  0 1rem;
-    padding: 0.25rem 0;
-}
+/*  */
 
-nav a{
-    color: black;
-}
+
+
 
 /**************************
 section article
@@ -152,8 +182,13 @@ section article:hover{
     box-shadow: -0.2rem 0.1rem 0.4rem #e90e0e ;
 }
 
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .linkGBlack{
-    color: black;
+    color: #212529;
     font-size: 100%;
 }
 

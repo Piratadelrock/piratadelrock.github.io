@@ -68,11 +68,11 @@ section article h2, section article p{
 section article:hover{
 
     /* esta propiedad es parecida a text-shadow
-    recibe: desplazamiento de sombra a la derecha
-        hacia a bajo respecto al elemento
-        cuanta difuminacion de la sombra
-        y color  
-        en este caso es 0.3 a 30% de sombra*/
+    recibe: 
+        1 desplazamiento de sombra a la derecha
+        2 hacia a bajo respecto al elemento
+        3 cuanta difuminacion de la sombra
+        y color en este caso es 0.3 con 30% de sombra*/
     
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0, 0.3);
 
