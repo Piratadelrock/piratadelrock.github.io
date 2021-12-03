@@ -10,10 +10,15 @@ html{
     font-size: 15px;
     padding: 0;
     margin: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
 }
 a {
     text-decoration: none;
-  }
+}
 img {
     width: 100%;
 }
@@ -33,19 +38,16 @@ HEADING
 /* tarea: piratadelrock volverlo aleatorio el color */
 #pdr{
     font-size: 4rem;
-    transition: color 2s; 
     -webkit-transition: color 1.5s;
-    transition: box-shadow 0.5s ease ; 
-
+    transition: box-shadow ease 0.5s, color 1s;; 
 
 }
 #pdr:hover {
     box-shadow: 0 1rem 5rem 50rem #222;
-    border-radius: 45px;
-    color: #b90c0c;
-    text-decoration: none;
-    line-height: inherit;
-    
+    border-radius: 100px;
+    color: #23d6cd;
+
+    /* line-height: inherit; */
     /*Tarea: intentando dar propiedad de color aleatorio variables */
     /* --main-bg-color: #2798ba; */
     /* background-color: var(--main-bg-color); */
@@ -57,9 +59,12 @@ header{
     background-color: #1f2124;
     color: white;
     margin:  0 1rem;
-    padding: 1rem 1rem;
-    border-radius: 0.3rem;
-    
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    /* ubicando  */
+    /* position: absolute;
+    z-index: -1; */
+  
 }
 
 header img {
@@ -75,7 +80,6 @@ header h1 {
 }
 
 header h1 a {
-    text-decoration:none;
     color: white;
 }
 
@@ -86,78 +90,99 @@ header h1 a {
     border-radius: 0.5rem;
     margin:  0 1rem;
     padding: 0.25rem 0;
+    
+
+}
+.line:hover{
+    transition: background-color 0.2s ease ; 
+    background-color: #b90c0c;
 
 }
 
 /**************************
 NAVIGATION
 ***************************/
-/* tarea: cuando baje el scroll que cambie de centro a la izquierda o derecha  */
-nav{
-    /* text-align: center; */
-    background-color: #efefef;
-    text-align-last: center;
+header nav {
+    background-color: #00648b;
+    /* background: none; */
+
+    margin-bottom: 10px;
+
     border-radius: 0.5rem;
     margin:  0 1rem;
-    padding: 0.25rem 0;
+    padding: 0 0.25rem;
+
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+/*header nav ul */
+.menu-fijo{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+  
+}
+    .menu-fijo li{
+        float: left;
+        /* display:inline-block;  */
+    }
+    .menu-fijo li a{
+        display: block;
+        margin: 1em 4px;
+        padding:16px;
+
+        transition: background-color 1s ease, box-shadow 0.3s ease, border-radius 0.5s;
+        color: white;
+        text-shadow: 1px 2px 0.2rem #2c2c2c; /* color:#1f2124; */
+        /* text-shadow: 0.1em -0.1em 0.1em #ffd000,
+                            -0.2em 0.1em 1em #ffd000,
+                            -0.2em 0.1em 1em #ffd000; */
+        font-size: 1rem;
+        /* padding: 1rem 1rem; */
+    }
+    .menu-fijo li a:hover{
+        color: black;
+        background-color: #ffbb00;
+        border-radius: 10px;
+
+        text-shadow: 0 0;
+        box-shadow: 0.6rem 0.7rem 0.5rem  #805E00;
+    }
     
+/* funciona con jquery con el scroll cuando llega al maximo de pixeles */
+.menu-fixed{
+    position:fixed;
+    z-index: 1000;
+    top:0;
+    width:100%;
+    /* max-width: 1260px; */
+    max-width: 84rem;
+    box-shadow: 0 4px 3px #5c5c5cc9;
+
+    background-color: #002331;
+
+}
+.menu-fixed ul li a{
+
+    color:white;
 }
 
-nav a{
-    color: none;
-}
-nav a:hover{
-    color: black;
+.menu-derecha{
+    list-style: none;
+    float: right;
+    margin: 0 10px;
 }
 
+
+/* uso para separar links */
 .barra{
     color: #1281db;
     font-size: 25px;
+    display: none;
+    /* <span class="barra">|</span> */
 }
-
-/*tarea arreglar menu fijo  */
-
-#navSection {
-
-    /* width: 1122px; */
-    /* height:30px; */
-    /* margin: 48px; */
-    /* padding:5px 48px; */
-    /* display:none; */
-    /* background-color: red; */
-}
-/* es el ul del nav */
-.menu-fijo{
-    /* background-color: royalblue; */
-    /* position:fixed; */
-    top:0;   
-    /* width: 260px; */
-    /* float: right; */
-    /* text-align: right; */
-    padding:4px 0 5px 0;
-    list-style-type:none;
-}
-
-.menu-fijo li{ display:inline; }
-.menu-fijo a{
-    transition: background-color 1s ease, box-shadow 0.3s ease;
-
-    font-size:0.9em;
-    /* text-shadow:1px 1px #5E8BC5; */
-    padding:  0.5rem 0.5rem;
-    /* margin: 3rem; */
-    background-color:#efefef;
-    border-radius: 4px;
-}
-.menu-fijo a:hover{
-    background-color:#ffbb00;
-    box-shadow: 0.8rem 1rem 0.5rem #222;
-
-}
-
-/*  */
-
-
 
 
 /**************************
