@@ -58,22 +58,16 @@ header{
     font-family: 'Days One','Open Sans', sans-serif;
     background-color: #1f2124;
     color: white;
-    margin:  0 1rem;
-    padding: 0.5rem 1rem;
+    /* aun no estoy seguro de si esto se realiza asi_
+    el margin -3 es para levantar el header para ocultar un poco de su contenido */
+    margin:  -3rem 1rem 0;
+    padding: 1em 1rem;
     border-radius: 0.5rem;
     /* ubicando  */
     /* position: absolute;
     z-index: -1; */
   
 }
-
-header img {
-    width: auto;
-    height: auto;
-    margin:  0;
-    padding: 0;
-}
-
 header h1 {
     font-size: 4rem;
     text-align: center;
@@ -81,6 +75,14 @@ header h1 {
 
 header h1 a {
     color: white;
+}
+
+
+header img {
+    width: auto;
+    height: auto;
+    margin:  0;
+    padding: 0;
 }
 
 .line{
