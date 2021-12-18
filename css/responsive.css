@@ -1,15 +1,40 @@
-/* @media all and (max-width: 934px) {
-  
-} */
-
-@media all and (max-width: 935px) {
-  /**************************
-  PÁGINA: index
-  ***************************/
-  h1 {
-    font-size: 2.5em;
-    overflow: hidden;
+/* menu */
+@media all and (min-width: 935px) {
+  /* funciona con jquery con el scroll 
+cuando llega al maximo de pixeles */
+  .menu-fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    max-width: 95%;
+    box-shadow: 0 4px 3px #5c5c5cc9;
+    background-color: #002331;
   }
-
-
 }
+
+/* em y rem  
+    rem: para basarse en el tamaño padre en este caso el html 
+    el em seria para basarse en los elementos padres como un div  */
+/* http://w3.unpocodetodo.info/css3/text.php */
+/* *****************************
+MODO DARK OR LIGHT
+********************************/
+/* @media (prefers-color-scheme: dark){
+    :root{
+        --bg-color: #000;
+        --text-color: #fff;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    :root{
+        --bg-color: #fff;
+        --text-color: #000;
+    }
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+} */

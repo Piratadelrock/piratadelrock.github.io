@@ -1,35 +1,7 @@
-
-/* em y rem  
-    rem: para basarse en el tamaño padre en este caso el html 
-    el em seria para basarse en los elementos padres como un div  */
-/* http://w3.unpocodetodo.info/css3/text.php */
-/* *****************************
-MODO DARK OR LIGHT
-********************************/
-/* @media (prefers-color-scheme: dark){
-    :root{
-        --bg-color: #000;
-        --text-color: #fff;
-    }
-}
-
-@media (prefers-color-scheme: light){
-    :root{
-        --bg-color: #fff;
-        --text-color: #000;
-    }
-}
-
-body{
-    background-color: var(--bg-color);
-    color: var(--text-color);
-} */
-
 /**************************
 GENERAL
 ***************************/
 html{
-    /* google fonts montserrat */
    font-family: 'Montserrat', sans-serif;
 
 }
@@ -84,10 +56,10 @@ header{
     font-family: 'Days One','Open Sans', sans-serif;
     background-color: #1f2124;
     color: white;
-    /* aun no estoy seguro de si esto se realiza asi_
-    el margin -3 es para levantar el header para ocultar un poco de su contenido */
+    /* para ocultar un poco de su contenido -3*/
     margin:  -3rem 1rem 0;
     padding: 1em 1rem;
+    overflow: hidden;
     border-radius: 0.5rem;
     /* ubicando  */
     /* position: absolute;
@@ -96,7 +68,7 @@ header{
 }
 header h1 {
     font-size: 4rem;
-    text-align: center;
+      text-align: center;
 }
 
 header h1 a {
@@ -180,20 +152,9 @@ header nav {
     }
     
 /* funciona con jquery con el scroll 
-cuando llega al maximo de pixeles */
-@media all and (min-width: 935px) {
-  
-    .menu-fixed{
-      position:fixed;
-      z-index: 1000;
-      top:0;
-      width:100%;
-      max-width: 95%;
-      box-shadow: 0 4px 3px #5c5c5cc9;
-      background-color: #002331;
-    
-  }
-}
+cuando llega al maximo de pixeles
+.menu-fixed esta en responsive.css */
+
 .menu-fixed ul li a{
 
     color:white;
