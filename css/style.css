@@ -179,17 +179,20 @@ header nav {
         box-shadow: 0.6rem 0.7rem 0.5rem  #805E00;
     }
     
-/* funciona con jquery con el scroll cuando llega al maximo de pixeles */
-.menu-fixed{
-    position:fixed;
-    z-index: 1000;
-    top:0;
-    width:100%;
-    max-width: 95%;
-    box-shadow: 0 4px 3px #5c5c5cc9;
-
-    background-color: #002331;
-
+/* funciona con jquery con el scroll 
+cuando llega al maximo de pixeles */
+@media all and (min-width: 935px) {
+  
+    .menu-fixed{
+      position:fixed;
+      z-index: 1000;
+      top:0;
+      width:100%;
+      max-width: 95%;
+      box-shadow: 0 4px 3px #5c5c5cc9;
+      background-color: #002331;
+    
+  }
 }
 .menu-fixed ul li a{
 

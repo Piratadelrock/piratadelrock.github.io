@@ -6,15 +6,6 @@
   /**************************
   PÁGINA: index
   ***************************/
-  .menu-fixed{
-    /* width:100%; */
-    max-width: 50%;
-    /* max-width: 84rem; */
-    /* box-shadow: 0 4px 3px #5c5c5cc9; */
-
-    /* background-color: #002331; */
-
-}
   h1 {
     font-size: 2.5em;
     overflow: hidden;
