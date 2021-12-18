@@ -1,3 +1,30 @@
+
+/* em y rem  
+    rem: para basarse en el tamaño padre en este caso el html 
+    el em seria para basarse en los elementos padres como un div  */
+/* http://w3.unpocodetodo.info/css3/text.php */
+/* *****************************
+MODO DARK OR LIGHT
+********************************/
+/* @media (prefers-color-scheme: dark){
+    :root{
+        --bg-color: #000;
+        --text-color: #fff;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    :root{
+        --bg-color: #fff;
+        --text-color: #000;
+    }
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+} */
+
 /**************************
 GENERAL
 ***************************/
@@ -23,28 +50,27 @@ img {
     width: 100%;
 }
 body {
-    
     background: url(../img/fondos/consola.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 
 /**************************
 HEADING
 ***************************/
-/* tarea: piratadelrock volverlo aleatorio el color */
+/* tarea: lograr colores aleatorios en el titulo */
 #pdr{
     font-size: 4rem;
     -webkit-transition: color 1.5s;
-    transition: box-shadow ease 0.5s, color 1s;; 
+    transition: box-shadow ease 0.5s, color 1.5s;; 
 
 }
 #pdr:hover {
-    box-shadow: 0 1rem 5rem 50rem #222;
-    border-radius: 100px;
+    box-shadow: 0 1rem 5rem 200rem #000;
+    border-radius: 500px;
     color: #23d6cd;
 
     /* line-height: inherit; */
@@ -159,8 +185,7 @@ header nav {
     z-index: 1000;
     top:0;
     width:100%;
-    /* max-width: 1260px; */
-    max-width: 84rem;
+    max-width: 95%;
     box-shadow: 0 4px 3px #5c5c5cc9;
 
     background-color: #002331;
@@ -201,7 +226,7 @@ section article  {
     cursor: pointer;
     margin: 1rem;
 }
-section article h2, section article p{
+section article h2, section article h3, section article p{
         margin: 1rem;
 }
 section article:hover{
