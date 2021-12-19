@@ -50,7 +50,22 @@ HEADING
     /* --main-bg-color: #2798ba; */
     /* background-color: var(--main-bg-color); */
 }
+#by{
+    font-size: 4rem;
+    -webkit-transition: color 1.5s;
+    transition: box-shadow ease 0.5s, color 1.5s;; 
 
+}
+#by:hover {
+    box-shadow: 0 1rem 5rem 200rem #000;
+    border-radius: 500px;
+    color: #d6233b;
+
+    /* line-height: inherit; */
+    /*Tarea: intentando dar propiedad de color aleatorio variables */
+    /* --main-bg-color: #2798ba; */
+    /* background-color: var(--main-bg-color); */
+}
 header{
     /* background: url(./img/fondos/Cohete.jpg); */
     font-family: 'Days One','Open Sans', sans-serif;
