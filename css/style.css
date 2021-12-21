@@ -3,17 +3,16 @@ GENERAL
 ***************************/
 html{
    font-family: 'Montserrat', sans-serif;
-
 }
 * {
     font-size: 15px;
     padding: 0;
     margin: 0;
 
+    /* esto es para que funcione en varios navegadores(estandar) */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
 }
 a {
     text-decoration: none;
@@ -26,13 +25,27 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-    /* height: 100vh; */
 }
-
 
 /**************************
 HEADING
 ***************************/
+#by{
+    font-size: 4rem;
+    -webkit-transition: color 1.5s;
+    transition: box-shadow ease 0.5s, color 1.5s;; 
+
+}
+#by:hover {
+    box-shadow: 0 1rem 5rem 200rem #000;
+    border-radius: 500px;
+    color: #d6233b;
+
+    /* line-height: inherit; */
+    /*Tarea: intentando dar propiedad de color aleatorio variables */
+    /* --main-bg-color: #2798ba; */
+    /* background-color: var(--main-bg-color); */
+}
 /* tarea: lograr colores aleatorios en el titulo */
 #pdr{
     font-size: 4rem;
@@ -44,22 +57,6 @@ HEADING
     box-shadow: 0 1rem 5rem 200rem #000;
     border-radius: 500px;
     color: #23d6cd;
-
-    /* line-height: inherit; */
-    /*Tarea: intentando dar propiedad de color aleatorio variables */
-    /* --main-bg-color: #2798ba; */
-    /* background-color: var(--main-bg-color); */
-}
-#by{
-    font-size: 4rem;
-    -webkit-transition: color 1.5s;
-    transition: box-shadow ease 0.5s, color 1.5s;; 
-
-}
-#by:hover {
-    box-shadow: 0 1rem 5rem 200rem #000;
-    border-radius: 500px;
-    color: #d6233b;
 
     /* line-height: inherit; */
     /*Tarea: intentando dar propiedad de color aleatorio variables */
@@ -89,8 +86,6 @@ header h1 {
 header h1 a {
     color: white;
 }
-
-
 header img {
     width: auto;
     height: auto;
@@ -140,8 +135,8 @@ header nav {
   
 }
     .menu-fijo li{
-        float: left;
-        /* display:inline-block;  */
+        /* float: left; */
+        display:inline-block; 
     }
     .menu-fijo li a{
         display: block;
@@ -181,57 +176,81 @@ cuando llega al maximo de pixeles
     margin: 0 10px;
 }
 
-
 /* uso para separar links */
 .barra{
     color: #1281db;
-    font-size: 25px;
-    display: none;
+    font-size: 30px;
     /* <span class="barra">|</span> */
 }
 
 
 /**************************
-section article
+section MAIN CONTAINER POST
 ***************************/
-section article  {
+.container{
+    max-width: 600px;
+    /* margin: 0 auto; */
+}
+.post, section article  {
     /* tarea: hacer que funcione la entrada de animaciones */
     transition: all 0.9s ease, box-shadow 0.3s ease; 
-
     background-color: #fff;
     margin: 1rem 0;
     border-radius: 1rem;
     padding: 0.25rem 0;
     cursor: pointer;
-    margin: 1rem;
 }
 section article h2, section article h3, section article p{
         margin: 1rem;
 }
-section article:hover{
+.post:hover{
     /* box-shadow: 0 0.1rem 0.4rem rgb(0,0,0, 0.3); */
-    box-shadow: -0.2rem 0.1rem 0.4rem #e90e0e ;
+    box-shadow: -0.2rem 0.1rem 0.4rem #e71818 ;
 }
-
-.container{
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 .linkGBlack{
     color: #212529;
     font-size: 100%;
 }
+.linkGWhite{
+    color: #fff;
+    font-size: 100%;
+}
 
+#main{
+    /* max-width:1500px; */
+    /* background-color:tomato; */
+}
+.aside{
+    display:inline-block;
+    background-color: #002331;
+    color: #fff;
+    max-width: 18rem;
+    min-height: 20rem;
+    float: right;
+    transition: all 0.9s ease, box-shadow 0.3s ease; 
+    border-radius: 0.4rem;
+    margin: 0 2rem;
+    padding: 0.4rem 1rem;
+}
+.aside:hover{
+    box-shadow: -0.2rem 0.1rem 0.4rem #7420e2 ;
+}
 
 /**************************
 Tabla de practica
 ***************************/
+
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto; 
+    padding: 0 5%;
+    display:none;
+  }
+
 table {
     width: 90%;
     /* eliminando espacio entre celdas */
     border-collapse: collapse;
-    display: none;
 }
 
 th,td{
@@ -240,7 +259,7 @@ th,td{
 
 }
 th{
-    background-color: tomato;
+    background-color: darkblue;
     color: white;
     text-align: left;
 }
@@ -257,14 +276,6 @@ tr:hover{
     background-color: #aaa;
     cursor: pointer;
 }
-/* #wrapper {
-    max-width: 940px;
-    margin: 0 auto; 
-    padding: 0 5%;
-  } */
-
-
-
 
 /**************************
 footer
