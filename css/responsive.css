@@ -1,4 +1,6 @@
+
 /* menu */
+
 @media all and (min-width: 935px) {
   /* funciona con jquery con el scroll 
 cuando llega al maximo de pixeles */
@@ -12,6 +14,14 @@ cuando llega al maximo de pixeles */
     background-color: #002331;
   }
 }
+
+@media all and (max-width: 480px) {
+  #main .aside{
+     display: none;
+  }
+}
+/* 480 */
+
 
 /* em y rem  
     rem: para basarse en el tamaño padre en este caso el html 

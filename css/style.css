@@ -187,10 +187,15 @@ html{
  /**************************
  section MAIN CONTAINER POST
  ***************************/
- .container{
-     max-width: 600px;
-     /* margin: 0 auto; */
- }
+ .linkGBlack{
+    color: #212529;
+    font-size: 100%;
+}
+.linkGWhite{
+    color: #fff;
+    font-size: 100%;
+}
+
  .post, section article  {
      /* tarea: hacer que funcione la entrada de animaciones */
      transition: all 0.9s ease, box-shadow 0.3s ease; 
@@ -207,27 +212,20 @@ html{
      /* box-shadow: 0 0.1rem 0.4rem rgb(0,0,0, 0.3); */
      box-shadow: -0.2rem 0.1rem 0.4rem #5c5c5cc9 ;
  }
- .linkGBlack{
-     color: #212529;
-     font-size: 100%;
- }
- .linkGWhite{
-     color: #fff;
-     font-size: 100%;
- }
- 
- #main{
-     /* max-width:1500px; */
-     /* background-color:tomato; */
- }
- .aside{
+
+#main .container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#main .aside{
      display:inline-block;
      background-color: #002331;
      color: #fff;
      max-width: 18rem;
      min-height: 20rem;
      float: right;
- 
+
      border-radius: 0.4rem;
      margin: 0 2rem;
      padding: 0.4rem 1rem;
@@ -237,7 +235,7 @@ html{
        /* -moz-box-shadow: 0 8px 6px -6px black; */
        box-shadow: 0.5rem 0.5rem black;
  }
- .aside:hover{
+ #main .aside:hover{
      
      /* esta propiedad es parecida a text-shadow
      recibe: desplazamiento de sombra a la derecha
