@@ -2,329 +2,330 @@
 GENERAL
 ***************************/
 html{
-   font-family: 'Montserrat', sans-serif;
-}
-* {
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
-
-    /* esto es para que funcione en varios navegadores(estandar) */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-}
-img {
-    width: 100%;
-}
-body {
-    background: url(../img/fondos/consola.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-}
-
-/**************************
-HEADING
-***************************/
-#by{
-    font-size: 4rem;
-    -webkit-transition: color 1.5s;
-    transition: box-shadow ease 0.5s, color 1.5s;; 
-
-}
-#by:hover {
-    box-shadow: 0 1rem 5rem 200rem #000;
-    border-radius: 500px;
-    color: #d6233b;
-
-    /* line-height: inherit; */
-    /*Tarea: intentando dar propiedad de color aleatorio variables */
-    /* --main-bg-color: #2798ba; */
-    /* background-color: var(--main-bg-color); */
-}
-/* tarea: lograr colores aleatorios en el titulo */
-#pdr{
-    font-size: 4rem;
-    -webkit-transition: color 1.5s;
-    transition: box-shadow ease 0.5s, color 1.5s;; 
-
-}
-#pdr:hover {
-    box-shadow: 0 1rem 5rem 200rem #000;
-    border-radius: 500px;
-    color: #23d6cd;
-
-    /* line-height: inherit; */
-    /*Tarea: intentando dar propiedad de color aleatorio variables */
-    /* --main-bg-color: #2798ba; */
-    /* background-color: var(--main-bg-color); */
-}
-header{
-    /* background: url(./img/fondos/Cohete.jpg); */
-    font-family: 'Days One','Open Sans', sans-serif;
-    background-color: #1f2124;
-    color: white;
-    /* para ocultar un poco de su contenido -3*/
-    margin:  -3rem 1rem 0;
-    padding: 1em 1rem;
-    overflow: hidden;
-    border-radius: 0.5rem;
-    /* ubicando  */
-    /* position: absolute;
-    z-index: -1; */
-  
-}
-header h1 {
-    font-size: 4rem;
-      text-align: center;
-}
-
-header h1 a {
-    color: white;
-}
-header img {
-    width: auto;
-    height: auto;
-    margin:  0;
-    padding: 0;
-}
-
-.line{
-    /* text-align: center; */
-    background-color: #efefef;
-    text-align-last: center;
-    border-radius: 0.5rem;
-    margin:  0 1rem;
-    padding: 0.25rem 0;
-    
-
-}
-.line:hover{
-    transition: background-color 0.2s ease ; 
-    background-color: #b90c0c;
-
-}
-
-/**************************
-NAVIGATION
-***************************/
-header nav {
-    background-color: #00648b;
-    /* background: none; */
-
-    margin-bottom: 10px;
-
-    border-radius: 0.5rem;
-    margin:  0 1rem;
-    padding: 0 0.25rem;
-
-    -moz-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-}
-
-/*header nav ul */
-.menu-fijo{
-    list-style: none;
-    overflow: hidden;
-    margin: 0;
-  
-}
-    .menu-fijo li{
-        /* float: left; */
-        display:inline-block; 
-    }
-    .menu-fijo li a{
-        display: block;
-        margin: 1em 4px;
-        padding:16px;
-
-        transition: background-color 1s ease, box-shadow 0.3s ease, border-radius 0.5s;
-        color: white;
-        text-shadow: 1px 2px 0.2rem #2c2c2c; /* color:#1f2124; */
-        /* text-shadow: 0.1em -0.1em 0.1em #ffd000,
-                            -0.2em 0.1em 1em #ffd000,
-                            -0.2em 0.1em 1em #ffd000; */
-        font-size: 1rem;
-        /* padding: 1rem 1rem; */
-    }
-    .menu-fijo li a:hover{
-        color: black;
-        background-color: #ffbb00;
-        border-radius: 10px;
-
-        text-shadow: 0 0;
-        box-shadow: 0.6rem 0.7rem 0.5rem  #805E00;
-    }
-    
-/* funciona con jquery con el scroll 
-cuando llega al maximo de pixeles
-.menu-fixed esta en responsive.css */
-
-.menu-fixed ul li a{
-
-    color:white;
-}
-
-.menu-derecha{
-    list-style: none;
-    float: right;
-    margin: 0 10px;
-}
-
-/* uso para separar links */
-.barra{
-    color: #1281db;
-    font-size: 30px;
-    /* <span class="barra">|</span> */
-}
-
-
-/**************************
-section MAIN CONTAINER POST
-***************************/
-.container{
-    max-width: 600px;
-    /* margin: 0 auto; */
-}
-.post, section article  {
-    /* tarea: hacer que funcione la entrada de animaciones */
-    transition: all 0.9s ease, box-shadow 0.3s ease; 
-    background-color: #fff;
-    margin: 1rem 0;
-    border-radius: 1rem;
-    padding: 0.25rem 0;
-    cursor: pointer;
-}
-section article h2, section article h3, section article p{
-        margin: 1rem;
-}
-.post:hover{
-    /* box-shadow: 0 0.1rem 0.4rem rgb(0,0,0, 0.3); */
-    box-shadow: -0.2rem 0.1rem 0.4rem #5c5c5cc9 ;
-}
-.linkGBlack{
-    color: #212529;
-    font-size: 100%;
-}
-.linkGWhite{
-    color: #fff;
-    font-size: 100%;
-}
-
-#main{
-    /* max-width:1500px; */
-    /* background-color:tomato; */
-}
-.aside{
-    display:inline-block;
-    background-color: #002331;
-    color: #fff;
-    max-width: 18rem;
-    min-height: 20rem;
-    float: right;
-
-    border-radius: 0.4rem;
-    margin: 0 2rem;
-    padding: 0.4rem 1rem;
-    transition: box-shadow 0.4s ease; 
-    
-    /* -webkit-box-shadow: 0 8px 6px -6px black; */
-      /* -moz-box-shadow: 0 8px 6px -6px black; */
-      box-shadow: 0.5rem 0.5rem black;
-}
-.aside:hover{
-    
-    /* esta propiedad es parecida a text-shadow
-    recibe: desplazamiento de sombra a la derecha
-        hacia a bajo respecto al elemento
-        cuanta difuminacion de la sombra
-        y color  
-        en este caso es 0.3 a 30% de sombra*/
-    box-shadow: 1rem 1rem 0.4rem #5c5c5cc9 ;
-}
-
-/**************************
-Tabla de practica
-***************************/
-
-#wrapper {
-    max-width: 940px;
-    margin: 0 auto; 
-    padding: 0 5%;
-    display:none;
-  }
-
-table {
-    width: 90%;
-    /* eliminando espacio entre celdas */
-    border-collapse: collapse;
-}
-
-th,td{
-    border: solid 1px #eee;
-    padding: 5px;
-
-}
-th{
-    background-color: darkblue;
-    color: white;
-    text-align: left;
-}
-/* seleccionar elementos sean pares o impares 
-dependiendo si esta en un listado o una tabla, dando colores a cada celda par o impar  
-odd = par 
-even = impar*/
-tr:nth-child(even){
-    background-color: #eee;
-
-}
-
-tr:hover{
-    background-color: #aaa;
-    cursor: pointer;
-}
-
-/**************************
-footer
-***************************/
-footer{
-    /* position: fixed;
-    bottom: 0;
-    max-width: 100%;
-    max-height: 100%;
-     */
-    background-color: #222;
-    padding: 2rem;
-    margin: 0 1rem ;
-    color: #fff;
-  
-    /* diseño izquierda  */
-    /* float:left; */
-    
-}
-
-footer section {
-    float: right;
-    
-}
-footer h5, footer p {
-    margin: 0;
-}
-footer a{
-
-    transition: color 0.3s ease;
-
-    color: #fff;
-    text-decoration: none;
-
-}
-footer a:hover{
-    color: cornflowerblue;
-}
-
-
+    font-family: 'Montserrat', sans-serif;
+ }
+ * {
+     font-size: 15px;
+     padding: 0;
+     margin: 0;
+ 
+     /* esto es para que funcione en varios navegadores(estandar) */
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+ a {
+     text-decoration: none;
+ }
+ img {
+     width: 100%;
+ }
+ body {
+     background: url(../img/fondos/consola.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin: 0;
+ }
+ 
+ /**************************
+ HEADING
+ ***************************/
+ #by{
+     font-size: 4rem;
+     -webkit-transition: color 1.5s;
+     transition: box-shadow ease 0.5s, color 1.5s;; 
+ 
+ }
+ #by:hover {
+     box-shadow: 0 1rem 5rem 200rem #000;
+     border-radius: 500px;
+     color: #d6233b;
+ 
+     /* line-height: inherit; */
+     /*Tarea: intentando dar propiedad de color aleatorio variables */
+     /* --main-bg-color: #2798ba; */
+     /* background-color: var(--main-bg-color); */
+ }
+ /* tarea: lograr colores aleatorios en el titulo */
+ #pdr{
+     font-size: 4rem;
+     -webkit-transition: color 1.5s;
+     transition: box-shadow ease 0.5s, color 1.5s;; 
+ 
+ }
+ #pdr:hover {
+     box-shadow: 0 1rem 5rem 200rem #000;
+     border-radius: 500px;
+     color: #23d6cd;
+ 
+     /* line-height: inherit; */
+     /*Tarea: intentando dar propiedad de color aleatorio variables */
+     /* --main-bg-color: #2798ba; */
+     /* background-color: var(--main-bg-color); */
+ }
+ header{
+     /* background: url(./img/fondos/Cohete.jpg); */
+     font-family: 'Days One','Open Sans', sans-serif;
+     background-color: #1f2124;
+     color: white;
+     /* para ocultar un poco de su contenido -3*/
+     margin:  -3rem 1rem 0;
+     padding: 1em 1rem;
+     overflow: hidden;
+     border-radius: 0.5rem;
+     /* ubicando  */
+     /* position: absolute;
+     z-index: -1; */
+   
+ }
+ header h1 {
+     font-size: 4rem;
+       text-align: center;
+ }
+ 
+ header h1 a {
+     color: white;
+ }
+ header img {
+     width: auto;
+     height: auto;
+     margin:  0;
+     padding: 0;
+ }
+ 
+ .line{
+     /* text-align: center; */
+     background-color: #efefef;
+     text-align-last: center;
+     border-radius: 0.5rem;
+     margin:  0 1rem;
+     padding: 0.25rem 0;
+     
+ 
+ }
+ .line:hover{
+     transition: background-color 0.2s ease ; 
+     background-color: #b90c0c;
+ 
+ }
+ 
+ /**************************
+ NAVIGATION
+ ***************************/
+ header nav {
+     background-color: #00648b;
+     /* background: none; */
+ 
+     margin-bottom: 10px;
+ 
+     border-radius: 0.5rem;
+     margin:  0 1rem;
+     padding: 0 0.25rem;
+ 
+     -moz-transition: all ease 0.5s;
+     -o-transition: all ease 0.5s;
+     transition: all ease 0.5s;
+ }
+ 
+ /*header nav ul */
+ .menu-fijo{
+     list-style: none;
+     overflow: hidden;
+     margin: 0;
+   
+ }
+     .menu-fijo li{
+         /* float: left; */
+         display:inline-block; 
+     }
+     .menu-fijo li a{
+         display: block;
+         margin: 1em 4px;
+         padding:16px;
+ 
+         transition: background-color 1s ease, box-shadow 0.3s ease, border-radius 0.5s;
+         color: white;
+         text-shadow: 1px 2px 0.2rem #2c2c2c; /* color:#1f2124; */
+         /* text-shadow: 0.1em -0.1em 0.1em #ffd000,
+                             -0.2em 0.1em 1em #ffd000,
+                             -0.2em 0.1em 1em #ffd000; */
+         font-size: 1rem;
+         /* padding: 1rem 1rem; */
+     }
+     .menu-fijo li a:hover{
+         color: black;
+         background-color: #ffbb00;
+         border-radius: 10px;
+ 
+         text-shadow: 0 0;
+         box-shadow: 0.6rem 0.7rem 0.5rem  #805E00;
+     }
+     
+ /* funciona con jquery con el scroll 
+ cuando llega al maximo de pixeles
+ .menu-fixed esta en responsive.css */
+ 
+ .menu-fixed ul li a{
+ 
+     color:white;
+ }
+ 
+ .menu-derecha{
+     list-style: none;
+     float: right;
+     margin: 0 10px;
+ }
+ 
+ /* uso para separar links */
+ .barra{
+     color: #1281db;
+     font-size: 30px;
+     /* <span class="barra">|</span> */
+ }
+ 
+ 
+ /**************************
+ section MAIN CONTAINER POST
+ ***************************/
+ .container{
+     max-width: 600px;
+     /* margin: 0 auto; */
+ }
+ .post, section article  {
+     /* tarea: hacer que funcione la entrada de animaciones */
+     transition: all 0.9s ease, box-shadow 0.3s ease; 
+     background-color: #fff;
+     margin: 1rem 0;
+     border-radius: 1rem;
+     padding: 0.25rem 0;
+     cursor: pointer;
+ }
+ section article h2, section article h3, section article p{
+         margin: 1rem;
+ }
+ .post:hover{
+     /* box-shadow: 0 0.1rem 0.4rem rgb(0,0,0, 0.3); */
+     box-shadow: -0.2rem 0.1rem 0.4rem #5c5c5cc9 ;
+ }
+ .linkGBlack{
+     color: #212529;
+     font-size: 100%;
+ }
+ .linkGWhite{
+     color: #fff;
+     font-size: 100%;
+ }
+ 
+ #main{
+     /* max-width:1500px; */
+     /* background-color:tomato; */
+ }
+ .aside{
+     display:inline-block;
+     background-color: #002331;
+     color: #fff;
+     max-width: 18rem;
+     min-height: 20rem;
+     float: right;
+ 
+     border-radius: 0.4rem;
+     margin: 0 2rem;
+     padding: 0.4rem 1rem;
+     transition: box-shadow 0.4s ease; 
+     
+     /* -webkit-box-shadow: 0 8px 6px -6px black; */
+       /* -moz-box-shadow: 0 8px 6px -6px black; */
+       box-shadow: 0.5rem 0.5rem black;
+ }
+ .aside:hover{
+     
+     /* esta propiedad es parecida a text-shadow
+     recibe: desplazamiento de sombra a la derecha
+         hacia a bajo respecto al elemento
+         cuanta difuminacion de la sombra
+         y color  
+         en este caso es 0.3 a 30% de sombra*/
+     box-shadow: 1rem 1rem 0.4rem #5c5c5cc9 ;
+ }
+ 
+ /**************************
+ Tabla de practica
+ ***************************/
+ 
+ #wrapper {
+     max-width: 940px;
+     margin: 0 auto; 
+     padding: 0 5%;
+     display:none;
+   }
+ 
+ table {
+     width: 90%;
+     /* eliminando espacio entre celdas */
+     border-collapse: collapse;
+ }
+ 
+ th,td{
+     border: solid 1px #eee;
+     padding: 5px;
+ 
+ }
+ th{
+     background-color: darkblue;
+     color: white;
+     text-align: left;
+ }
+ /* seleccionar elementos sean pares o impares 
+ dependiendo si esta en un listado o una tabla, dando colores a cada celda par o impar  
+ odd = par 
+ even = impar*/
+ tr:nth-child(even){
+     background-color: #eee;
+ 
+ }
+ 
+ tr:hover{
+     background-color: #aaa;
+     cursor: pointer;
+ }
+ 
+ /**************************
+ footer
+ ***************************/
+ footer{
+     /* position: fixed;
+     bottom: 0;
+     max-width: 100%;
+     max-height: 100%;
+      */
+     background-color: #222;
+     padding: 2rem;
+     margin: 0 1rem ;
+     color: #fff;
+   
+     /* diseño izquierda  */
+     /* float:left; */
+     
+ }
+ 
+ footer section {
+     float: right;
+     
+ }
+ footer h5, footer p {
+     margin: 0;
+ }
+ footer a{
+ 
+     transition: color 0.3s ease;
+ 
+     color: #fff;
+     text-decoration: none;
+ 
+ }
+ footer a:hover{
+     color: cornflowerblue;
+ }
+ 
+ 
+ 
