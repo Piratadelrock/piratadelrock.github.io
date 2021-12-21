@@ -205,7 +205,7 @@ section article h2, section article h3, section article p{
 }
 .post:hover{
     /* box-shadow: 0 0.1rem 0.4rem rgb(0,0,0, 0.3); */
-    box-shadow: -0.2rem 0.1rem 0.4rem #5c5c5cc9 ;
+    box-shadow: -0.2rem 0.1rem 0.4rem #e71818 ;
 }
 .linkGBlack{
     color: #212529;
@@ -227,25 +227,13 @@ section article h2, section article h3, section article p{
     max-width: 18rem;
     min-height: 20rem;
     float: right;
-
+    transition: all 0.9s ease, box-shadow 0.3s ease; 
     border-radius: 0.4rem;
     margin: 0 2rem;
     padding: 0.4rem 1rem;
-    transition: box-shadow 0.4s ease; 
-    
-    /* -webkit-box-shadow: 0 8px 6px -6px black; */
-      /* -moz-box-shadow: 0 8px 6px -6px black; */
-      box-shadow: 0.5rem 0.5rem black;
 }
 .aside:hover{
-    
-    /* esta propiedad es parecida a text-shadow
-    recibe: desplazamiento de sombra a la derecha
-        hacia a bajo respecto al elemento
-        cuanta difuminacion de la sombra
-        y color  
-        en este caso es 0.3 a 30% de sombra*/
-    box-shadow: 1rem 1rem 0.4rem #5c5c5cc9 ;
+    box-shadow: -0.2rem 0.1rem 0.4rem #7420e2 ;
 }
 
 /**************************
