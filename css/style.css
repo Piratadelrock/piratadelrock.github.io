@@ -250,12 +250,11 @@ html{
  Tabla de practica
  ***************************/
  
- #wrapper {
-     max-width: 940px;
+ #tabla {
+     min-width: 800px;
      margin: 0 auto; 
-     padding: 0 5%;
-     display:none;
-   }
+    display: none;    
+}
  
  table {
      width: 90%;
@@ -266,7 +265,6 @@ html{
  th,td{
      border: solid 1px #eee;
      padding: 5px;
- 
  }
  th{
      background-color: darkblue;
@@ -279,7 +277,6 @@ html{
  even = impar*/
  tr:nth-child(even){
      background-color: #eee;
- 
  }
  
  tr:hover{
