@@ -18,10 +18,11 @@ cuando llega al maximo de pixeles */
 @media all and (max-width: 480px) {
   #main .aside{
      display: none;
-  }
+     z-index: -99;
+    }
 }
-/* 480 */
 
+/* 480 */
 
 /* em y rem  
     rem: para basarse en el tamaño padre en este caso el html 
