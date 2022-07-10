@@ -34,3 +34,16 @@ $(document).ready(function(){
 // var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
 
 // document.documentElement.style.setProperty('main-bg-color', randomColor);
+
+
+
+
+
+// contador de visitas
+// if (localStorage.pagecount){
+//     localStorage.pagecount = Number(localStorage.pagecount)+1
+// }
+// else{
+//     localStorage.pagecount = 1
+// }
+// document.write("Has visitado mi pagina " + localStorage.pagecount + " veces")

@@ -4,15 +4,16 @@
 @media all and (min-width: 935px) {
   /* funciona con jquery con el scroll 
 cuando llega al maximo de pixeles */
-  .menu-fixed {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    width: 100%;
-    max-width: 95%;
-    box-shadow: 0 4px 3px #5c5c5cc9;
-    background-color: #002331;
-  }
+.menu-fixed {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  max-width: 95%;
+  box-shadow: 0 4px 3px #5c5c5cc9;
+  background-color: #002331;
+}
+
 }
 @media all and (max-width: 480px) {
   #main .aside{

@@ -1,0 +1,21 @@
+# versiones del manifiesto 
+# Manifiesto v1.0
+# Este es un manifiesto para mi pagina web 
+
+# aca los principales para cache que conformen la pagina web
+CACHE MANIFEST
+index.html
+manifiesto.html
+estilos.css
+imagenes/imagen.pagina
+scripts/miscript.js
+
+# Lenguajes lado servidor 
+NETWORK:
+log.php
+visitas.php
+
+# por lo que fuera fallara lo anterior, estos nuevos archivos serian un segundo intento
+FALLBACK;
+img/imagen.png
+archivo.php
