@@ -25,9 +25,12 @@ img {
 }
 
 body {
-    background: url(../img/fondos/consola.png);
+    background: url(../img/fondos/dinos.png);
+    background-color: #ccc;
     background-size: cover;
+    background-size: 20%;
     background-repeat: no-repeat;
+    background-position: left bottom;
     margin: 0;
 }
 
@@ -98,14 +101,14 @@ body {
 
 #pdr:hover {
 
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 0px 10px 0px 10px;
     box-shadow: 0px 0px 10px white;
     -webkit-border-radius: 0px 10px 0px 10px;
     -webkit-box-shadow: 0px 0px 10px white;
     margin:10px;
-    animation: parpadeo 5s;
-    -webkit-animation: parpadeo 5s;
+    animation: parpadeo 2s;
+    -webkit-animation: parpadeo 2s;
     animation-iteration-count:infinite;
     -webkit-animation-iteration-count:infinite;
 
