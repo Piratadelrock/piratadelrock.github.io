@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.05)),
+    url("../../img/netflix/headerBackground");
+  height: 100vh;
+}
