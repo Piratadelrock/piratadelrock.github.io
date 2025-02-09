@@ -4,10 +4,12 @@ const pageInfo = document.getElementById("pageInfo");
 // Función para cambiar la página o contenido según el valor
 slider.addEventListener("input", () => {
   const value = slider.value;
-  pageInfo.textContent = `Página ${value}`;
+  pageInfo.textContent = `Fondo ${value}`;
 
   switch (value) {
     case "1":
+      pageInfo.textContent = `Fondo oculto ${value}`;
+
       document.body.style.backgroundImage = "url('img/fondos/code.jpg')";
       // Ajuste de las props
       document.body.style.backgroundSize = "cover"; // Cubrir todo el fondo
