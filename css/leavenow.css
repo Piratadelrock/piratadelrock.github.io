@@ -3,11 +3,48 @@ body,
 td,
 th {
   font-family: Courier New, Courier, mono;
-  color: #33ff33;
+  color: #a6a6a6;
 }
+
 body {
-  background-color: #000;
+  background-color: #282a36;
+  color: #f8f8f2;
+  font-family: monospace;
+  font-size: 2rem;
+  padding: 20px;
 }
+
+#console {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cursor {
+  /* display: inline-block; */
+  /* width: 10px; */
+  /* background-color: transparent; */
+  background-color: #303f46;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+
+  /* 0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  } */
+}
+
 .Headline {
   font-size: x-large;
 }
@@ -41,16 +78,15 @@ td {
   border: 1px;
 }
 
-.ttime{
-  font-family: 'Source Code Pro';
-  font-style: normal;
+.ttime {
+  font-family: "Source Code Pro";
+  font-style: oblique;
   font-weight: 400;
-  width: 10%;
+  width: 50%;
   margin: 1em;
-  padding: 2em ;
+  padding: 2em;
   background: #121212;
 }
-
 
 /* 
 @font-face {
