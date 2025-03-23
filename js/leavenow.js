@@ -37,9 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
   let textarea = document.getElementById("console");
   let output = document.getElementById("output");
   let commands = document.getElementById("commands");
+  const consoleContainer = document.querySelector(".console-container");
 
   let cursor = document.querySelector(".cursor");
 
+  consoleContainer.addEventListener("click", () => {
+    textarea.focus();
+  });
   // Mantener foco en el textarea para que siempre capture input
   document.addEventListener("keydown", function () {
     textarea.focus();
