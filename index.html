@@ -1,83 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
+  <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>you00.dat</title>
+  <!-- CSS -->
   <link rel="stylesheet" href="css/leavenow.css">
-  <!-- <link rel="stylesheet" href="../../css/leavenow.css"> -->
-
 </head>
 
 <body>
-  <table>
+  <canvas id="bg-canvas"></canvas>
+  <div class="console-container">
     <div class="ttime">
       <p>Piratadelrock - The time is now</p>
       <pre id="commands"></pre>
     </div>
-    <div class="console-container">
-      <!-- root@:~#   ?:~#   _   -->
-      <a class="link" href="home" style="color: #009500; font-family: console; letter-spacing:0.2em">
-      </a>
-      <p>root@server:~$ <span id="output"></span><span class="cursor">_</span></p>
-      <textarea id="console" autofocus></textarea>
-
-    </div>
-
-
-    <script src="js/leavenow.js"></script>
-
-    <!-- <tr>
-      <td>
-        <a class="link" onclick="goBack()">
-          <<span id="txt">_</span>Atras.js
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a class="link" onclick="history.back(-1)">
-          <<span id="txt">_</span>Atras.history.back(-1)
-        </a>
-      </td>
-    </tr> -->
-    <!-- 
-    <aside>
-      <h2>Clonando: </h2>
-      <a href="../clone/netflix.html">
-        <span id="netflix">Netflix</span>
-      </a>
-    </aside>
-
-    <h2>TABLA DE ESPECIFICACIONES</h2>
-    <table border="1">
-      <tr>
-        <th class="superior"><strong>MODELO</strong></th>
-        <td class="superior"><strong>PROCESADOR</strong></td>
-        <td class="superior"><strong>RAM</strong></td>
-        <td class="superior"><strong>HDD/SSD</strong></td>
-        <td class="superior"><strong>GPU</strong></td>
-        <td class="superior"><strong>PANTALLA</strong></td>
-        <td class="superior"><strong>PRECIO</strong></td>
-      </tr>
-      <tbody>
-        <th> ASUS TUF GAMING </th>
-        <td>Procesador Intel® Core™ i5-10300H; 2,5 GHz (caché de 8M; hasta 4,5 GHz, 4 núcleos)</td>
-        <td>8GB DDR4 SO-DIMM(2933MHz for i5-10300H/i7-10750H/i7-10870H), 32GB</td>
-        <td>SSD de 512 GB M.2 NVMe™ PCIe® 3.0</td>
-        <td>NVIDIA® GeForce® GTX 1650 Ti, GDDR6 de 4 GB</td>
-        <td> 15,6 pulgadas, FHD (1920 × 1080) 16:9, anti-glare display, 62.5%, 47.1%, 144 Hz, Valor de nivel
-          IPS,Optimus</td>
-        <td>2.390.000</td>
-      </tbody>
-    </table>
-
-  </table> -->
-
+    <!-- root@:~#   ?:~#   _   -->
+    <a class="link" href="home" style="color: #009500; font-family: console; letter-spacing:0.2em">
+      <!-- puedes poner texto aquí si quieres -->
+    </a>
+    <p>root@server:~$ <span id="output"></span><span class="cursor">_</span></p>
+    <textarea id="console" autofocus></textarea>
     <footer>
       <section>
-        <h6>Copyright 2025 &copy; by Emmanuel J. </h6>
+        <h6>Copyright 2025 &copy; by Emmanuel J.</h6>
       </section>
     </footer>
+  </div>
+
+  <!-- Tu JS de consola -->
+  <script src="js/leavenow.js"></script>
+
 </body>
 
 </html>

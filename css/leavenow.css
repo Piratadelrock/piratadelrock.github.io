@@ -1,4 +1,5 @@
 /* consola pirata */
+
 body,
 td,
 th {
@@ -7,17 +8,29 @@ th {
 }
 
 body {
+  /* background: #051d1b; */
   background-color: #282a36;
   color: #f8f8f2;
   font-family: monospace;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2.5vw, 2rem);
   padding: 20px;
 }
-
+.console-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
 #console {
   position: absolute;
   opacity: 0;
-  pointer-events: none;
+  /* pointer-events: none; evita poder escribir en movil */
+  z-index: 10;
+  width: 100%;
+  height: 100%;
 }
 
 .cursor {
@@ -86,6 +99,22 @@ td {
   margin: 1em;
   padding: 2em;
   background: #121212;
+}
+
+/* ANIMACION DEL FONDO DE CANVAS TV */
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
 }
 
 /* 

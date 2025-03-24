@@ -41,9 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let cursor = document.querySelector(".cursor");
 
-  consoleContainer.addEventListener("click", () => {
-    textarea.focus();
-  });
+  //con esta funcion hacemos que se mantenga el foo en el contenedor del text area para los celulares. al hacer tap
+  // consoleContainer.addEventListener("click", () => {
+  //   textarea.focus();
+  // });
   // Mantener foco en el textarea para que siempre capture input
   document.addEventListener("keydown", function () {
     textarea.focus();
@@ -90,3 +91,85 @@ document.addEventListener("DOMContentLoaded", function () {
     commands.innerHTML = "Write ´Help´ command";
   }, 4000);
 });
+
+// ANIMACION DEL FONDO DE LA CONSOLA
+const c = document.getElementById("bg-canvas");
+const ctx = c.getContext("2d");
+
+let w, h, pixels;
+
+function resize() {
+  w = c.width = window.innerWidth;
+  h = c.height = window.innerHeight;
+  pixels = new Array(w * h).fill(0);
+}
+
+resize();
+window.addEventListener("resize", resize);
+
+function draw() {
+  const imgData = ctx.createImageData(w, h);
+  const data = imgData.data;
+
+  for (let i = 0; i < pixels.length; i++) {
+    const val = Math.floor(20 + 30 * Math.sin(i / 200 + Date.now() / 1000));
+    data[i * 4 + 0] = val; // R
+    data[i * 4 + 1] = val; // G
+    data[i * 4 + 2] = val; // B
+    data[i * 4 + 3] = 255; // A
+  }
+
+  ctx.putImageData(imgData, 0, 0);
+  requestAnimationFrame(draw);
+}
+
+draw();
+
+// especificaciones
+
+//  <tr>
+//   <td>
+//   <a class="link" onclick="goBack()">
+//     <<span id="txt">_</span>Atras.js
+//   </a>
+// </td>
+// </tr>
+// <tr>
+// <td>
+//   <a class="link" onclick="history.back(-1)">
+//     <<span id="txt">_</span>Atras.history.back(-1)
+//   </a>
+// </td>
+// </tr> -->
+// <!--
+// <aside>
+// <h2>Clonando: </h2>
+// <a href="../clone/netflix.html">
+//   <span id="netflix">Netflix</span>
+// </a>
+// </aside>
+
+// <h2>TABLA DE ESPECIFICACIONES</h2>
+// <table border="1">
+// <tr>
+//   <th class="superior"><strong>MODELO</strong></th>
+//   <td class="superior"><strong>PROCESADOR</strong></td>
+//   <td class="superior"><strong>RAM</strong></td>
+//   <td class="superior"><strong>HDD/SSD</strong></td>
+//   <td class="superior"><strong>GPU</strong></td>
+//   <td class="superior"><strong>PANTALLA</strong></td>
+//   <td class="superior"><strong>PRECIO</strong></td>
+// </tr>
+// <tbody>
+//   <th> ASUS TUF GAMING </th>
+//   <td>Procesador Intel® Core™ i5-10300H; 2,5 GHz (caché de 8M; hasta 4,5 GHz, 4 núcleos)</td>
+//   <td>8GB DDR4 SO-DIMM(2933MHz for i5-10300H/i7-10750H/i7-10870H), 32GB</td>
+//   <td>SSD de 512 GB M.2 NVMe™ PCIe® 3.0</td>
+//   <td>NVIDIA® GeForce® GTX 1650 Ti, GDDR6 de 4 GB</td>
+//   <td> 15,6 pulgadas, FHD (1920 × 1080) 16:9, anti-glare display, 62.5%, 47.1%, 144 Hz, Valor de nivel
+//     IPS,Optimus</td>
+//   <td>2.390.000</td>
+// </tbody>
+// </table>
+
+// </table>
