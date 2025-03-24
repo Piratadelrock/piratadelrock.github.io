@@ -311,8 +311,9 @@ section article p {
  ***************************/
 
 #tabla {
-  min-width: 800px;
-  margin: 0 auto;
+  min-width: 900px;
+  margin: 0;
+  padding: 0;
   display: none;
 }
 
